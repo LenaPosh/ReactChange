@@ -6,11 +6,8 @@ export const AppHeader = () => {
             <div className="header">
                 <div className="header__wrapper">
                     <h1 className="header__title">
-                            Hi, this is my app Tgbinaryoptions
+                            Hi, this is my app TgBinaryOptions
                     </h1>
-                    <a href="#!" className="btn">
-                        Open me
-                    </a>
                 </div>
             </div>
         </>

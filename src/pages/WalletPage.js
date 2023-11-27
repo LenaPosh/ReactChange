@@ -1,12 +1,15 @@
 import {MenuTop} from "../components/MenuTop/MenuTop";
 import {AppFooter} from "../components/Footer/Footer";
-import {AppWallet} from "../components/Wallet/Wallet";
+import ChartContainer from "../components/Balance/Balance";
+// import {AppWallet} from "../components/Wallet/Wallet";
 
 export const WalletPage = () => {
     return (
         <>
             <MenuTop/>
-            <AppWallet/>
+            {/*<AppWallet/>*/}
+            {/*<PieChart/>*/}
+            <ChartContainer/>
             <AppFooter/>
 
         </>

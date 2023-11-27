@@ -1,0 +1,41 @@
+@import '~devextreme/dist/css/dx.common.css';
+@import '~devextreme/dist/css/dx.light.css';
+
+
+.dx-datagrid .dx-data-row > td.bullet {
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+
+.dx-toolbar .dx-toolbar-items-container {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.dx-datagrid .dx-row {
+    background-color: lightgray;
+}
+
+.dx-datagrid .dx-header-row .dx-header-cell {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dx-datagrid .dx-row.dx-selection {
+    background-color: #a6c0e0;
+}
+
+.dx-tooltip-content {
+    font-size: 14px;
+    color: green;
+}
+
+.dx-datagrid {
+    background-color: #f0f0f0;
+}
+
+
+
+

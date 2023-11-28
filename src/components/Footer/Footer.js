@@ -22,6 +22,7 @@ const FooterStyle = styled.footer`
   left: 0;
   right: 0;
   width: 100vw;
+  height: 70px;
 `;
 
 export const AppFooter = () => {

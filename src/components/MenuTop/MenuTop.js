@@ -15,7 +15,7 @@ export const StyledNav = styled.nav`
   padding: 25px 0;
   background-color: #08a652;
   color: #fff;
-  height: 50px;
+  height: 40px;
   position: fixed;
   top: 0;
   left: 0;

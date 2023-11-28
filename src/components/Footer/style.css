@@ -31,7 +31,7 @@
 }
 .menu-item:hover {
     background-color: #e9ecef; /* Цвет фона при наведении */
-    transform: scale(0.6);
+    /*transform: scale(0.6);*/
 }
 
 .menu-icon {

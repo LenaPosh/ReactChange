@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
-import LogoTB from "./Sandwich Frontrun Bot (1).png"
+// import LogoTB from "./Sandwich Frontrun Bot (1).png"
 import './style.css'
 import {useState} from "react";
 // import { SiTether } from "react-icons/si";
@@ -47,8 +47,8 @@ export const MenuTop = () => {
 
     return (
         <StyledNav>
-                    <NavLink to="/">
-                        <img className='logo-text' alt='' src={LogoTB} />
+                    <NavLink to="/" className='logo-text'>
+                        SWFRBOT
                     </NavLink>
 
             {/*        <div className={`dropdown ${isOpen ? 'isOpen' : ''}`}>*/}

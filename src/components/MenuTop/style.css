@@ -1,8 +1,16 @@
 /*!* MenuTop *!*/
 .logo-text {
-    height: 90px;
-    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Your Icon Font', sans-serif;
+    font-size: 24px;
+    margin-left: 30px;
 }
+
+.logo-text:hover {
+    text-decoration: none;
+}
+
 
 .card {
     margin: 20px auto 0;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
-import LogoTB from "./Sandwich Frontrun Bot.png"
+import LogoTB from "./Sandwich Frontrun Bot (1).png"
 import './style.css'
 import {useState} from "react";
 // import { SiTether } from "react-icons/si";
@@ -13,7 +13,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   justify-content: flex-start;
   padding: 25px 0;
-  background-color: #dae8f6;
+  background-color: #08a652;
   color: #fff;
   height: 50px;
   position: fixed;

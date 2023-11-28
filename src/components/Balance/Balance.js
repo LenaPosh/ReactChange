@@ -35,7 +35,7 @@ const ChartContainer = () => {
         width: '100%',
         height: '600px',
         marginTop: '20px',
-        backgroundColor: 'rgb(217,196,196)'
+        backgroundColor: 'white'
     };
 
     return (

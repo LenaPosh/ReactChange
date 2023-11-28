@@ -6,14 +6,14 @@ import './style.css';
 import { FaWallet } from 'react-icons/fa';
 import { TiChartBarOutline } from 'react-icons/ti';
 import { ImHome } from 'react-icons/im';
-import { RiMenu2Line } from 'react-icons/ri';
+import { AiOutlineLineChart } from "react-icons/ai";
 
 export const Screen = styled.div`
   min-height: 100vh;
 `;
 
 const FooterStyle = styled.footer`
-  padding: 25px 0;
+  padding: 0;
   color: #fff;
   background-color: #2c2c2c;
   text-align: center;
@@ -42,7 +42,7 @@ export const AppFooter = () => {
 
                         <NavLink to="/menu" className="menu-item">
                             <div className="menu-icon">
-                                <RiMenu2Line />
+                                <AiOutlineLineChart />
                             </div>
                             <div className="menu-text">PNL</div>
                         </NavLink>

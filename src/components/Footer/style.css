@@ -1,36 +1,72 @@
-
 .menu-items {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa; /* Светлый фон */
+    padding: 10px 0; /* Внутренний отступ */
+    margin: 0; /* Убрать внешние отступы для футера */
 }
 
 .menu-item {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #96F1F4;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    transition: background-color 0.3s;
-    /*box-sizing: border-box;*/
+    color: #495057; /* Цвет текста */
+    transition: color 0.3s, background-color 0.3s;
+    padding: 15px; /* Внутренний отступ */
+    position: relative;
+    border-radius: 10px; /* Закругление углов */
+    margin-bottom: 10px; /* Отступ между элементами меню */
 }
 
+.menu-item:hover {
+    background-color: #e9ecef; /* Цвет фона при наведении */
+}
 
 .menu-icon {
-    margin-right: 5px;
+    margin-bottom: 5px; /* Отступ между иконкой и текстом */
+    font-size: 24px; /* Увеличение размера иконки */
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
 
-    width: 100%
+.menu-item:hover .menu-icon {
+    color: #007bff; /* Новый цвет при наведении */
+}
 
+.menu-item:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #28a745, #ffc107, #007bff); /* Градиентная полоса */
+    bottom: -10px;
+    left: 0;
+    transition: height 0.3s; /* Плавное изменение высоты при наведении */
+}
+
+.menu-item:hover:after {
+    height: 0;
+}
+
+.menu-icon {
+    margin-bottom: 5px;
 }
 
 .menu-text {
-    display: flex;
-
-    flex-direction: column;
     text-align: center;
+}
+
+/* Стиль для иконок */
+.menu-icon svg {
+    font-size: 24px;
+    color: #3498db; /* Цвет иконок */
+}
+
+
+
+.sc-dlfmHC.gEFSzc.footer {
+    padding: 1px 0 0 0;
 }
 
 

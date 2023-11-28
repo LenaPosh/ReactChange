@@ -8,6 +8,7 @@ import PieChart, {
     Format,
 } from 'devextreme-react/pie-chart';
 
+
 const newData = {
     "BNB": 40,
     "USDT": 20,

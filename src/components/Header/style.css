@@ -34,6 +34,7 @@ body, html {
     padding: 0 15px;
     max-width: 100vh;
     margin: 0 auto;
+    align-self: center;
 }
 
 .header__title {
@@ -41,6 +42,7 @@ body, html {
     font-size: 40px;
     font-weight: 700;
     line-height: 1.4;
+    align-self: center;
 
 }
 

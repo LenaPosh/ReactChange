@@ -8,7 +8,7 @@ export const AppHeader = () => {
                     <h2 className="header__title">
                             Hi, this is <br/>
                     my app <br/>
-                        SandwichFrontrunBot
+                        Sandwich <br/>Frontrun<br/>Bot
                     </h2>
                 </div>
             </div>

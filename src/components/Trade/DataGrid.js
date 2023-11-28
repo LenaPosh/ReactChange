@@ -96,7 +96,8 @@ import React from 'react';
 import DataGrid from 'devextreme-react/data-grid';
 import { customers } from './data.js';
 import 'devextreme/dist/css/dx.common.css';
-import 'devextreme/dist/css/dx.light.css';
+// import 'devextreme/dist/css/dx.light.css';
+import 'devextreme/dist/css/dx.material.blue.light.css';
 import './styleData.css'; // Импорт файлов стилей
 
 const columns = ['CompanyName', 'City', 'State', 'Phone', 'Fax'];

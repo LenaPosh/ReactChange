@@ -15,12 +15,12 @@ body, html {
     align-items: center;
     margin: 0;
 
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgb(217,196,196);
     background-image: url('header-bg.png');
     background-repeat: no-repeat;
     background-position: center center;
 
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(114, 112, 112);
     text-align: center;
     /*z-index: 1000;*/
 
@@ -53,7 +53,7 @@ body, html {
 
 .header__title em {
     font-style: normal;
-    color: #fff;
+    color: #3f3e3e;
 }
 
 .header__text {

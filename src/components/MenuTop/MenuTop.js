@@ -4,9 +4,7 @@ import LogoTB from "./Sandwich Frontrun Bot.png"
 import './style.css'
 import {useState} from "react";
 // import { SiTether } from "react-icons/si";
-import { SiEthereum } from "react-icons/si";
-import { SiLitecoin } from "react-icons/si";
-import { FaBitcoin } from "react-icons/fa";
+
 // import {Language} from "../Language";
 
 export const StyledNav = styled.nav`
@@ -15,7 +13,7 @@ export const StyledNav = styled.nav`
   align-items: center;
   justify-content: flex-start;
   padding: 25px 0;
-  background-color: #2c2c2c;
+  background-color: #dae8f6;
   color: #fff;
   height: 50px;
   position: fixed;
@@ -24,7 +22,7 @@ export const StyledNav = styled.nav`
   right: 0;
   width: 100vw;
   z-index: 20;
-  `
+`
 
 export const MenuTop = () => {
     const [selectedOption, setSelectedOption] = useState(null);

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #f8f9fa; /* Светлый фон */
+    background-color: #D3E3FC; /* Светлый фон */
     padding: 10px 0; /* Внутренний отступ */
     margin: 0; /* Убрать внешние отступы для футера */
     box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);  /* Тень сверху */
@@ -14,21 +14,26 @@
     align-items: center;
     text-decoration: none;
     color: #495057; /* Цвет текста */
-    transition: color 0.3s, background-color 0.3s;
+    transition: transform 0.3s ease-in-out;
     padding: 15px; /* Внутренний отступ */
     position: relative;
     border-radius: 10px; /* Закругление углов */
     margin-bottom: 10px; /* Отступ между элементами меню */
+    font-family: 'Your Chosen Font', sans-serif;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75),
+    0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .menu-item:hover {
     background-color: #e9ecef; /* Цвет фона при наведении */
+    transform: scale(1.05);
 }
 
 .menu-icon {
     margin-bottom: 5px; /* Отступ между иконкой и текстом */
     font-size: 24px; /* Увеличение размера иконки */
     transition: color 0.3s; /* Плавное изменение цвета при наведении */
+    font-family: 'Your Icon Font', sans-serif;
 }
 
 .menu-item:hover .menu-icon {
@@ -43,7 +48,7 @@
     background: linear-gradient(to right, #28a745, #ffc107, #007bff); /* Градиентная полоса */
     bottom: -10px;
     left: 0;
-    transition: height 0.3s; /* Плавное изменение высоты при наведении */
+    transition: height 0.3s, background 0.3s;
 }
 
 .menu-item:hover:after {
@@ -61,7 +66,7 @@
 /* Стиль для иконок */
 .menu-icon svg {
     font-size: 24px;
-    color: #3498db; /* Цвет иконок */
+    color: #77A6F7; /* Цвет иконок */
 }
 
 

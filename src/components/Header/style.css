@@ -1,49 +1,35 @@
-/* Header */
 body, html {
     padding: 0;
     overflow-x: hidden;
     margin: 40px 0 10px 0;
-    /*height: 100vh;*/
-
 }
 
 .header {
-    padding: 40px 0;
+    padding: 0;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-
+    margin: 0 !important;
     background-color: white;
     background-image: url('header-bg.png');
     background-repeat: no-repeat;
     background-position: center center;
-
     color: rgb(114, 112, 112);
     text-align: center;
-    /*z-index: 1000;*/
-
-
-    /*flex: 1;*/
-    /*overflow-y: auto;*/
-        /*overflow-y: auto;*/
 }
 
 .header__wrapper {
     padding: 0 15px;
-    max-width: 100vh;
+    max-width: 800px; /* Измените значение на ваше усмотрение */
     margin: 0 auto;
-    align-self: center;
 }
 
 .header__title {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     font-size: 40px;
     font-weight: 700;
-    line-height: 1.4;
-    align-self: center;
-
+    /*line-height: 1.4;*/
 }
 
 .header__title strong {
@@ -66,20 +52,18 @@ body, html {
     margin-top: 0.5em;
 }
 
-
 body::-webkit-scrollbar {
     width: 5px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #3f3e3e; /* Цвет ползунка */
-    border-radius: 7px; /* Закругление углов ползунка */
+    background-color: #3f3e3e;
+    border-radius: 7px;
 }
 
 body::-webkit-scrollbar-track {
     background-color: #3f3e3e;
 }
-
 
 body::-webkit-scrollbar-thumb:hover {
     background-color: grey;

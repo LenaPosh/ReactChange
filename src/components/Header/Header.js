@@ -5,9 +5,11 @@ export const AppHeader = () => {
         <>
             <div className="header">
                 <div className="header__wrapper">
-                    <h1 className="header__title">
-                            Hi, this is my app SandwichFrontrunBot
-                    </h1>
+                    <h2 className="header__title">
+                            Hi, this is <br/>
+                    my app <br/>
+                        SandwichFrontrunBot
+                    </h2>
                 </div>
             </div>
         </>

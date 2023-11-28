@@ -6,7 +6,10 @@ import './style.css';
 import { FaWallet } from 'react-icons/fa';
 import { TiChartBarOutline } from 'react-icons/ti';
 import { ImHome } from 'react-icons/im';
-import { AiOutlineLineChart } from "react-icons/ai";
+// import { AiOutlineLineChart } from "react-icons/ai";
+import { IoBarChartSharp } from "react-icons/io5";
+// import { FcComboChart } from "react-icons/fc";
+// import { FaChartBar } from "react-icons/fa";
 
 export const Screen = styled.div`
   min-height: 100vh;
@@ -18,15 +21,15 @@ const FooterStyle = styled.footer`
   background-color: #2c2c2c;
   text-align: center;
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   left: 0;
   right: 0;
   width: 100vw;
-  height: 70px;
+  height: 60px;
 `;
 
 export const AppFooter = () => {
-    const { t } = useTranslation(); // Используем хук useTranslation для перевода
+    const { t } = useTranslation();
 
     return (
         <>
@@ -43,7 +46,7 @@ export const AppFooter = () => {
 
                         <NavLink to="/menu" className="menu-item">
                             <div className="menu-icon">
-                                <AiOutlineLineChart />
+                                <IoBarChartSharp />
                             </div>
                             <div className="menu-text">PNL</div>
                         </NavLink>

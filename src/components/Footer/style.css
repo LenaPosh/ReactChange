@@ -16,27 +16,28 @@
     text-decoration: none;
     color: #495057; /* Цвет текста */
     transition: transform 0.3s ease-in-out;
-    padding: 15px; /* Внутренний отступ */
+    padding: 10px; /* Внутренний отступ */
     position: relative;
     border-radius: 10px; /* Закругление углов */
-    margin-bottom: 10px; /* Отступ между элементами меню */
+    margin-bottom: 5px; /* Отступ между элементами меню */
     font-family: 'Roboto', sans-serif;
 
     /*box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75),*/
     /*0 5px 10px rgba(0, 0, 0, 0.1);*/
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .menu-item.active {
     color: #08a652; /* Зеленый цвет для текста активного элемента */
 }
 .menu-item:hover {
-    background-color: #e9ecef; /* Цвет фона при наведении */
+    /*background-color: #e9ecef; !* Цвет фона при наведении *!*/
+    outline: none;
     /*transform: scale(0.6);*/
 }
 
 .menu-icon {
-    margin-bottom: 5px; /* Отступ между иконкой и текстом */
+    margin-bottom: 3px; /* Отступ между иконкой и текстом */
     font-size: 18px; /* Увеличение размера иконки */
     transition: color 0.3s; /* Плавное изменение цвета при наведении */
     font-family: 'Roboto', sans-serif;
@@ -80,7 +81,7 @@
 
 /* Стиль для иконок */
 .menu-icon svg {
-    font-size: 16px;
+    font-size: 14px;
     color: #818183; /* Цвет иконок */
 }
 

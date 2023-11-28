@@ -3,11 +3,10 @@ import PieChart, {
     Legend,
     Series,
     Label,
-    Export,
     Tooltip,
     Format,
 } from 'devextreme-react/pie-chart';
-
+import './style.css';
 
 const newData = {
     "BNB": 40,
@@ -33,14 +32,17 @@ const customizeLabel = (pointInfo) => {
 const ChartContainer = () => {
     const containerStyles = {
         width: '100%',
-        height: '600px',
-        marginTop: '20px',
-        backgroundColor: 'white'
+        height: '500px',
+        marginTop: '-90px',
+        backgroundColor: 'white',
+        display: 'flex',
+        marginLeft: '30px',
+        marginBottom: '0',
     };
 
     return (
-        <div style={containerStyles}>
-            <PieChart dataSource={data} palette="Material" title="Распределение депозита по монетам">
+        <div style={containerStyles} className="chart-container">
+            <PieChart dataSource={data} palette="Material">
                 <Series argumentField="region">
                     <Label visible={true} position="columns" customizeText={customizeLabel} />
                 </Series>
@@ -48,15 +50,12 @@ const ChartContainer = () => {
                     <Format type="millions" />
                 </Tooltip>
                 <Legend visible={false} />
-                <Export enabled={true} />
             </PieChart>
         </div>
     );
 };
 
 export default ChartContainer;
-
-
 
 
 

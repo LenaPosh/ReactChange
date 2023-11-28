@@ -1,22 +1,61 @@
-import React from 'react';
-import DataGrid from 'devextreme-react/data-grid';
-import { customers } from './data.js';
-import styles from './DataTable.module.css'; // Убедитесь, что путь к файлу CSS верный
+import React, { useState } from 'react';
+import 'devextreme/data/odata/store';
+import DataGrid, { Column } from 'devextreme-react/data-grid';
 
-const columns = ['CompanyName', 'City', 'State', 'Phone', 'Fax'];
+const dataSourceOptions = {
+    store: {
+        type: 'odata',
+        url: 'https://js.devexpress.com/Demos/DevAV/odata/Products',
+        key: 'Product_ID',
+    },
+    select: [
+        'Product_ID',
+        'Product_Name',
+        'Product_Cost',
+        'Product_Sale_Price',
+        'Product_Retail_Price',
+        'Product_Current_Inventory',
+    ],
+    filter: ['Product_Current_Inventory', '>', 0],
+};
 
-const DataTable = () => {
+const AppTable = () => {
+    const [dataSource] = useState(dataSourceOptions);
+
     return (
         <DataGrid
-            dataSource={customers}
-            keyExpr="ID"
-            defaultColumns={columns}
+            dataSource={dataSource}
             showBorders={true}
-            rowAlternationEnabled={true}
-            className={styles.dataGrid}
-        />
+        >
+            <Column dataField="Product_ID" />
+            <Column
+                dataField="Product_Name"
+                width={250}
+            />
+            <Column
+                dataField="Product_Cost"
+                caption="Cost"
+                dataType="number"
+                format="currency"
+            />
+            <Column
+                dataField="Product_Sale_Price"
+                caption="Sale Price"
+                dataType="number"
+                format="currency"
+            />
+            <Column
+                dataField="Product_Retail_Price"
+                caption="Retail Price"
+                dataType="number"
+                format="currency"
+            />
+            <Column
+                dataField="Product_Current_Inventory"
+                caption="Inventory"
+            />
+        </DataGrid>
     );
-}
+};
 
-export default DataTable;
-
+export default AppTable;

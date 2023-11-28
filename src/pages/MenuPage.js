@@ -1,7 +1,7 @@
 import {MenuTop} from "../components/MenuTop/MenuTop";
-// import YourComponent from "../components/Balance/response";
-import DataTable from '../components/PNL/DataTable';
+
 import {AppFooter} from "../components/Footer/Footer";
+import AppTable from "../components/PNL/DataTable";
 
 export const MenuPage = () => {
     return (
@@ -9,7 +9,8 @@ export const MenuPage = () => {
             <Screen>
                 <MenuTop/>
                 <h1>Таблица сделок</h1>
-                <DataTable/>
+                <AppTable/>
+
 
                 <AppFooter/>
             </Screen>

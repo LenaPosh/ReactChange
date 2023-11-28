@@ -5,6 +5,7 @@
     background-color: #f8f9fa; /* Светлый фон */
     padding: 10px 0; /* Внутренний отступ */
     margin: 0; /* Убрать внешние отступы для футера */
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.75);  /* Тень сверху */
 }
 
 .menu-item {

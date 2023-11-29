@@ -53,9 +53,9 @@ export const MenuTop = () => {
 
     return (
         <StyledNav>
-                    <NavLink to="/" className='logo-text'>
-                        SWFRBOT
-                    </NavLink>
+            <NavLink to="/" className={`logo-text ${selectedOption === null ? 'active' : ''}`}>
+                SWFRBOT
+            </NavLink>
             <BalanceText>Balance: 405$</BalanceText>
 
             {/*        <div className={`dropdown ${isOpen ? 'isOpen' : ''}`}>*/}

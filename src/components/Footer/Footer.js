@@ -27,7 +27,58 @@ const FooterStyle = styled.footer`
   width: 100vw;
   height: 60px;
 `;
+const MenuLink = styled(NavLink)`
+  color: #495057;
+  text-decoration: none;
+  transition: transform 0.3s ease-in-out;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 
+  &:hover {
+    outline: none;
+  }
+
+  .menu-icon {
+    margin-bottom: 3px;
+    font-size: 18px;
+    transition: color 0.3s;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  &:hover .menu-icon {
+    color: #007bff;
+  }
+
+  &.active {
+    color: #08a652;
+
+    .menu-icon {
+      color: #08a652;
+    }
+
+    &:after {
+      height: 2px;
+    }
+
+    &:hover:after {
+      height: 2px;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -10px;
+    left: 0;
+    transition: height 0.3s, background 0.3s;
+  }
+`;
 export const AppFooter = () => {
     const { t } = useTranslation();
 
@@ -37,12 +88,12 @@ export const AppFooter = () => {
                 <div className="menu-navigation">
                     <div className="menu-items">
 
-                        <NavLink to="/home" className="menu-item active">
+                        <MenuLink to="/home" className="menu-item" activeClassName="active">
                             <div className="menu-icon">
                                 <ImHome />
                             </div>
                             <div className="menu-text" style={{ whiteSpace: 'nowrap' }}>{t('home')}</div>
-                        </NavLink>
+                        </MenuLink>
 
                         <NavLink to="/menu" className="menu-item">
                             <div className="menu-icon">

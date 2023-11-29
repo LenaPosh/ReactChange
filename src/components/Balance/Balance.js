@@ -33,10 +33,10 @@ const ChartContainer = () => {
     const containerStyles = {
         width: '100%',
         height: '500px',
-        marginTop: '-90px',
+        marginTop: '-50px',
         backgroundColor: 'white',
         display: 'flex',
-        marginLeft: '30px',
+        marginLeft: '40px',
         marginBottom: '0',
     };
 

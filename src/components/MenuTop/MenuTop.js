@@ -56,7 +56,7 @@ export const MenuTop = () => {
                     <NavLink to="/" className='logo-text'>
                         SWFRBOT
                     </NavLink>
-            <BalanceText>Balance: 321 $</BalanceText>
+            <BalanceText>Balance: 405$</BalanceText>
 
             {/*        <div className={`dropdown ${isOpen ? 'isOpen' : ''}`}>*/}
 

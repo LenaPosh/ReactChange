@@ -29,10 +29,12 @@ const customizeLabel = (pointInfo) => {
     return `${pointInfo.argumentText}\n${(pointInfo.percent * 100).toFixed(2)}%`;
 };
 
+
 const ChartContainer = () => {
+
     const containerStyles = {
         width: '100%',
-        height: '500px',
+        height: '400px',
         marginTop: '-10px',
         backgroundColor: 'white',
         display: 'flex',
@@ -44,7 +46,7 @@ const ChartContainer = () => {
     return (
         <div style={containerStyles} className="chart-container">
             <PieChart dataSource={data} palette={['#e9cbfc', "#8fefbc", '#abd9f1']}>
-                <Series argumentField="region">
+                <Series argumentField="region" innerRadius={0.2}>
                     <Label visible={true} position="columns" customizeText={customizeLabel} />
                 </Series>
                 <Tooltip enabled={true} customizeTooltip={customizeTooltip}>
@@ -57,6 +59,7 @@ const ChartContainer = () => {
 };
 
 export default ChartContainer;
+
 
 
 

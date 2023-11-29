@@ -36,13 +36,13 @@ const ChartContainer = () => {
         marginTop: '-10px',
         backgroundColor: 'white',
         display: 'flex',
-        marginLeft: '40px',
+        marginLeft: '5px',
         marginBottom: '0',
     };
 
     return (
         <div style={containerStyles} className="chart-container">
-            <PieChart dataSource={data} palette="Material">
+            <PieChart dataSource={data} palette={['#e9cbfc', "#8fefbc", '#abd9f1']}>
                 <Series argumentField="region">
                     <Label visible={true} position="columns" customizeText={customizeLabel} />
                 </Series>

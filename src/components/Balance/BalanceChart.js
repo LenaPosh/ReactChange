@@ -43,6 +43,7 @@ class BalanceChart extends React.Component {
                         valueField="value"
                         name="Balance"
                         type="line"
+                        color="#08a652"
                     />
                     <ArgumentAxis
                         type="datetime"

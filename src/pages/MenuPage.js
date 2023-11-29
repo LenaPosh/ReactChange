@@ -15,8 +15,9 @@ export const MenuPage = () => {
                 <BalanceChart/>
                 <h2 className='title-chart-2'>Прибыль по дням</h2>
                 <ProfitChart/>
-                {/*<h2></h2>*/}
-                <h2>график</h2>
+                <h3>график</h3>
+                <h2></h2>
+
             </div>
 
             <AppFooter/>

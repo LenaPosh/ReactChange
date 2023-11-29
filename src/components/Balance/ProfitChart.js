@@ -7,6 +7,7 @@ const profitChartStyles = {
     marginLeft: '10px',
     marginRight: '10px',
     marginBottom: '50px',
+
 };
 
 class ProfitChart extends React.Component {
@@ -16,11 +17,10 @@ class ProfitChart extends React.Component {
         // Ваши данные прибыли (дата и значение)
         this.state = {
             profitData: [
-                { date: '2023-11-01', profit: 20 },
-                { date: '2023-11-02', profit: 30 },
-                { date: '2023-11-03', profit: 10 },
-                { date: '2023-11-04', profit: 25 },
-                // Добавьте свои данные
+                { date: '26-11-2023', profit: 2 },
+                { date: '27-11-2023', profit: 5 },
+                { date: '28-11-2023', profit: 8 },
+
             ],
         };
     }

@@ -7,7 +7,9 @@
 /*    margin-top: 220px;*/
 /*    margin-right: 0; !* Добавьте это свойство, чтобы убрать отступ справа *!*/
 /*}*/
-
+.centered-container {
+    margin-bottom: 0;
+}
 .title-chart {
     color: #1f1f1f;
     cursor: pointer;
@@ -18,24 +20,29 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 0;
 }
-
+.title-chart-2 {
+    color: #1f1f1f;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
 .title-chart:hover {
     background-color: #ddd;
 }
 
-/* Убираем стили для ::-webkit-scrollbar */
-/*body::-webkit-scrollbar {*/
-/*    width: initial;*/
-/*}*/
-
-/*body::-webkit-scrollbar-thumb {*/
-/*    background-color: initial;*/
-/*}*/
-
-/*body::-webkit-scrollbar-track {*/
-/*    background-color: initial;*/
-/*}*/
+.title-chart-2:hover {
+    background-color: #ddd;
+}
 
 
 

@@ -16,11 +16,9 @@ class BalanceChart extends React.Component {
         // Ваши данные баланса (дата и значение)
         this.state = {
             balanceData: [
-                { date: '2023-11-01', value: 1000 },
-                { date: '2023-11-02', value: 1020 },
-                { date: '2023-11-03', value: 1050 },
-                { date: '2023-11-04', value: 1070 },
-                // Добавьте свои данные
+                { date: '26-11-2023', value: 392 },
+                { date: '27-11-2023', value: 397 },
+                { date: '28-11-2023', value: 405 },
             ],
         };
     }

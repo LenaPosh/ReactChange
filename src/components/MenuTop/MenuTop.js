@@ -6,7 +6,13 @@ import {useState} from "react";
 // import { SiTether } from "react-icons/si";
 
 // import {Language} from "../Language";
-
+const BalanceText = styled.div`
+  margin-left: auto; // Это поместит элемент вправо
+  color: #fff;
+  font-size: 18px;
+  margin-right: 30px; // Регулирует расстояние между логотипом и текстом
+  font-family: 'Roboto', sans-serif;
+`;
 export const StyledNav = styled.nav`
   display: flex;
   flex-direction: row;
@@ -50,6 +56,7 @@ export const MenuTop = () => {
                     <NavLink to="/" className='logo-text'>
                         SWFRBOT
                     </NavLink>
+            <BalanceText>Balance: 321 $</BalanceText>
 
             {/*        <div className={`dropdown ${isOpen ? 'isOpen' : ''}`}>*/}
 

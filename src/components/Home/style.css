@@ -11,12 +11,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    background-color: #ebeceb; /* Светлый зеленый цвет */
+    background-color: #e8fae5; /* Светлый зеленый цвет */
 }
 
 .news-card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #b6b3b3; /* Темный зеленый цвет при наведении */
+    background-color: #95cc8f; /* Темный зеленый цвет при наведении */
 }
 
 .news-card img {

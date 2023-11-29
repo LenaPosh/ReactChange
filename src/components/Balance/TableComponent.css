@@ -1,0 +1,51 @@
+.table-container {
+    width: 95%;
+    margin: 20px;
+}
+
+.dx-datagrid {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.dx-datagrid-headers {
+    background-color: #abd9f1; /* Blue */
+    color: #fff; /* White */
+}
+
+.dx-datagrid-header-text {
+    color: #fff; /* White */
+}
+
+.dx-datagrid-row {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dx-datagrid-row:hover {
+    background-color: #ecf0f1; /* Light blue-gray on hover */
+}
+
+.dx-datagrid-pager, .dx-datagrid-paging {
+    margin-top: 10px;
+}
+
+.dx-datagrid-pager-pages, .dx-datagrid-pager-page-size {
+    color: #333; /* Dark gray */
+}
+
+.dx-pager-pages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dx-pager-page {
+    color: #3498db; /* Blue */
+}
+
+.dx-pager-page-active {
+    font-weight: bold;
+    color: #fff; /* White */
+    background-color: #3498db; /* Blue */
+}

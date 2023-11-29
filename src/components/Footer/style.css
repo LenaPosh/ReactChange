@@ -91,7 +91,22 @@
     padding: 0;
 }
 
+.menu-item.active {
+    color: #08a652; /* Зеленый цвет для текста активного элемента */
+    /*border-bottom: 2px solid #08a652; !* Добавляем подчеркивание для активного элемента *!*/
+}
 
+.menu-item.active:hover:after {
+    height: 2px; /* Высота подчеркивания для активного элемента при наведении */
+}
+
+.menu-item.active .menu-icon {
+    color: #08a652; /* Зеленый цвет для иконки активного элемента */
+}
+
+.menu-item.active .menu-icon svg {
+    color: #08a652; /* Зеленый цвет для иконки активного элемента при наведении */
+}
 
 /*body, html {*/
 /*    margin: 0;*/

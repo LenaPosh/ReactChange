@@ -18,7 +18,7 @@ export const WalletPage = () => {
                 <h2 className='title-chart'>Распределение депозита по монетам</h2>
                 {/*<PieChartDiagram/>*/}
                 <ChartContainer/>
-                <h2 className='title-chart-2'>Таблица</h2>
+                <h2 className='title-chart-2'>Ваш баланс распределен:</h2>
                 <TableComponent/>
                 <h2>график</h2>
                 <h2></h2>

@@ -9,9 +9,9 @@ import PieChart, {
 import './style.css';
 
 const newData = {
-    BNB: 40,
-    USDT: 20,
-    BTC: 40,
+    WBNB: 280.00,
+    TrustFi: 60.00,
+    Friend3: 65.00,
 };
 
 const data = Object.keys(newData).map((token) => ({
@@ -21,23 +21,21 @@ const data = Object.keys(newData).map((token) => ({
 
 const customizeTooltip = (arg) => {
     return {
-        text: `${arg.argumentText}\n${(arg.percent * 100).toFixed(2)}%`,
+        text: `${arg.argumentText}\n${arg.value.toFixed(2)}$ ${(arg.percent * 100).toFixed(2)}%`,
     };
 };
 
 const customizeLabel = (pointInfo) => {
-    return `${pointInfo.argumentText}\n${(pointInfo.percent * 100).toFixed(2)}%`;
+    return `${pointInfo.argumentText}\n${pointInfo.value.toFixed(2)}$ ${(pointInfo.percent * 100).toFixed(2)}%`;
 };
 
 const ChartContainer = () => {
     const containerStyles = {
         width: '100%',
-        height: '400px',
+        height: '370px',
         marginTop: '-10px',
         backgroundColor: 'white',
         display: 'flex',
-        marginLeft: '5px',
-        marginRight: '5px',
         marginBottom: '0',
     };
 
@@ -68,6 +66,7 @@ const ChartContainer = () => {
 };
 
 export default ChartContainer;
+
 
 
 

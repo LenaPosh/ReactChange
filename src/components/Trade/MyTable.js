@@ -6,7 +6,7 @@ import './MyTable.css';
 const MyTable = () => {
     const data = [
         {
-            Datetime: '28-11-2023 13:07:38',
+            Datetime: '28.11.23 13:07:38',
             Active: 'TrustFi',
             BaseActive: 'WBNB',
             Amount: '$287.1',
@@ -17,7 +17,7 @@ const MyTable = () => {
             ],
         },
         {
-            Datetime: '28-11-2023 12:36:23',
+            Datetime: '28.11.23 12:36:23',
             Active: 'Friend3',
             BaseActive: 'BUSD',
             Amount: '$566.07',

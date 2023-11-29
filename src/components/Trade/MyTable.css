@@ -58,3 +58,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+    .my-table th, .my-table td {
+        font-size: 12px; /* Регулируйте размер шрифта по вашему усмотрению */
+    }
+
+    .arrow {
+        width: 15px; /* Регулируйте размер стрелки по вашему усмотрению */
+        height: 15px;
+    }
+}

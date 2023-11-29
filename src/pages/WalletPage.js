@@ -7,6 +7,7 @@ import './styleBalance.css'
 import TableComponent from "../components/Balance/TabThree";
 import React from "react";
 
+
 export const WalletPage = () => {
     return (
         <>
@@ -15,6 +16,7 @@ export const WalletPage = () => {
             {/*<PieChart/>*/}
             <div className="centered-container">
                 <h2 className='title-chart'>Распределение депозита по монетам</h2>
+                {/*<PieChartDiagram/>*/}
                 <ChartContainer/>
                 <h2 className='title-chart-2'>Таблица</h2>
                 <TableComponent/>

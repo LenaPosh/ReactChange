@@ -12,7 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/react-table": "^7.7.18",
     "axios": "^1.6.2",
-    "chart.js": "^4.4.0",
+    "chart.js": "^2.9.4",
     "clipboard-copy": "^4.0.1",
     "devextreme": "21.2",
     "devextreme-react": "21.2",

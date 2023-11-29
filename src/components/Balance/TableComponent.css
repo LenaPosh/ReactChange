@@ -1,6 +1,6 @@
 .table-container {
-    width: 95%;
-    margin: 20px;
+    width: 100%;
+    /*margin: 20px;*/
 }
 
 .dx-datagrid {
@@ -24,7 +24,7 @@
 }
 
 .dx-datagrid-row:hover {
-    background-color: #ecf0f1; /* Light blue-gray on hover */
+    background-color: #ecf0f1;
 }
 
 .dx-datagrid-pager, .dx-datagrid-paging {
@@ -47,5 +47,10 @@
 .dx-pager-page-active {
     font-weight: bold;
     color: #fff; /* White */
-    background-color: #3498db; /* Blue */
+    background-color: #3498db;
+}
+@media (min-width: 768px) {
+    .dx-datagrid {
+        width: 90%;
+    }
 }

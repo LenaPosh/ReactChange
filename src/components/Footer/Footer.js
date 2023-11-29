@@ -37,7 +37,7 @@ export const AppFooter = () => {
                 <div className="menu-navigation">
                     <div className="menu-items">
 
-                        <NavLink to="/home" className="menu-item">
+                        <NavLink to="/home" className="menu-item active">
                             <div className="menu-icon">
                                 <ImHome />
                             </div>

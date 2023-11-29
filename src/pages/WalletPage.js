@@ -20,8 +20,8 @@ export const WalletPage = () => {
                 <ChartContainer/>
                 <h2 className='title-chart-2'>Ваш баланс распределен:</h2>
                 <TableComponent/>
-                <h2>график</h2>
-                <h2></h2>
+                {/*<h2>график</h2>*/}
+                {/*<h2></h2>*/}
                 {/*<h2 className='title-chart'>График баланса</h2>*/}
                 {/*<BalanceChart/>*/}
                 {/*<h2>График прибыли</h2>*/}

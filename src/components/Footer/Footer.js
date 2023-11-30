@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './style.css';
 import { FaWallet } from 'react-icons/fa';
@@ -25,8 +25,8 @@ const FooterStyle = styled.footer`
   height: 60px;
 `;
 
-const MenuLink = styled(NavLink)`
-  color: ${(props) => (props.isHomePage ? '#08a652' : '#495057')};
+const MenuItem = styled.div`
+  color: ${(props) => (props.isCurrentPage ? '#08a652' : '#495057')};
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
   padding: 10px;
@@ -38,6 +38,7 @@ const MenuLink = styled(NavLink)`
 
   &:hover {
     outline: none;
+    color: #007bff;
   }
 
   .menu-icon {
@@ -45,10 +46,6 @@ const MenuLink = styled(NavLink)`
     font-size: 18px;
     transition: color 0.3s;
     font-family: 'Roboto', sans-serif;
-  }
-
-  &:hover .menu-icon {
-    color: #007bff;
   }
 
   &.active {
@@ -92,35 +89,43 @@ export const AppFooter = () => {
             <FooterStyle className="footer">
                 <div className="menu-navigation">
                     <div className="menu-items">
-                        <MenuLink to="/home" className={`menu-item ${isHomePage ? 'active' : ''}`} activeClassName="active">
-                            <div className="menu-icon">
-                                <ImHome />
-                            </div>
-                            <div className="menu-text" style={{ whiteSpace: 'nowrap' }}>
-                                {t('home')}
-                            </div>
-                        </MenuLink>
+                        <MenuItem isCurrentPage={isHomePage}>
+                            <Link to="/home" className="menu-item" activeClassName="active">
+                                <div className="menu-icon">
+                                    <ImHome />
+                                </div>
+                                <div className="menu-text" style={{ whiteSpace: 'nowrap' }}>
+                                    {t('home')}
+                                </div>
+                            </Link>
+                        </MenuItem>
 
-                        <NavLink to="/menu" className="menu-item">
-                            <div className="menu-icon">
-                                <IoBarChartSharp />
-                            </div>
-                            <div className="menu-text">PNL</div>
-                        </NavLink>
+                        <MenuItem isCurrentPage={location.pathname === '/menu'}>
+                            <Link to="/menu" className="menu-item">
+                                <div className="menu-icon">
+                                    <IoBarChartSharp />
+                                </div>
+                                <div className="menu-text">PNL</div>
+                            </Link>
+                        </MenuItem>
 
-                        <NavLink to="/trade" className="menu-item">
-                            <div className="menu-icon">
-                                <TiChartBarOutline />
-                            </div>
-                            <div className="menu-text">{t('trade')}</div>
-                        </NavLink>
+                        <MenuItem isCurrentPage={location.pathname === '/trade'}>
+                            <Link to="/trade" className="menu-item">
+                                <div className="menu-icon">
+                                    <TiChartBarOutline />
+                                </div>
+                                <div className="menu-text">{t('trade')}</div>
+                            </Link>
+                        </MenuItem>
 
-                        <NavLink to="/wallet" className="menu-item">
-                            <div className="menu-icon">
-                                <FaWallet />
-                            </div>
-                            <div className="menu-text">BALANCE</div>
-                        </NavLink>
+                        <MenuItem isCurrentPage={location.pathname === '/wallet'}>
+                            <Link to="/wallet" className="menu-item">
+                                <div className="menu-icon">
+                                    <FaWallet />
+                                </div>
+                                <div className="menu-text">BALANCE</div>
+                            </Link>
+                        </MenuItem>
                     </div>
                 </div>
             </FooterStyle>

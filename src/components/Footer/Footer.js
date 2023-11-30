@@ -88,7 +88,7 @@ export const AppFooter = () => {
                 <div className="menu-navigation">
                     <div className="menu-items">
 
-                        <MenuLink to="/home" className="menu-item" activeClassName="active">
+                        <MenuLink to="/home" className="menu-item active" activeClassName="active">
                             <div className="menu-icon">
                                 <ImHome />
                             </div>
@@ -101,10 +101,6 @@ export const AppFooter = () => {
                             </div>
                             <div className="menu-text">PNL</div>
                         </NavLink>
-
-
-
-
 
                         <NavLink to="/trade" className="menu-item">
                             <div className="menu-icon">

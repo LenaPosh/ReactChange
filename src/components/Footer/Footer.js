@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -6,7 +6,7 @@ import './style.css';
 import { FaWallet } from 'react-icons/fa';
 import { TiChartBarOutline } from 'react-icons/ti';
 import { ImHome } from 'react-icons/im';
-import { IoBarChartSharp } from "react-icons/io5";
+import { IoBarChartSharp } from 'react-icons/io5';
 
 export const Screen = styled.div`
   min-height: 100vh;
@@ -26,7 +26,7 @@ const FooterStyle = styled.footer`
 `;
 
 const MenuLink = styled(NavLink)`
-  color: ${props => props.isHomePage ? '#08a652' : '#495057'};
+  color: ${(props) => (props.isHomePage ? '#08a652' : '#495057')};
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
   padding: 10px;
@@ -82,10 +82,10 @@ export const AppFooter = () => {
     const { t } = useTranslation();
     const [isHomePage, setIsHomePage] = useState(false);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         const currentPath = window.location.pathname.startsWith('/home');
         setIsHomePage(currentPath);
-    }, []);
+    }, []); // Вызываем только после монтирования
 
     return (
         <>
@@ -96,7 +96,9 @@ export const AppFooter = () => {
                             <div className="menu-icon">
                                 <ImHome />
                             </div>
-                            <div className="menu-text" style={{ whiteSpace: 'nowrap' }}>{t('home')}</div>
+                            <div className="menu-text" style={{ whiteSpace: 'nowrap' }}>
+                                {t('home')}
+                            </div>
                         </MenuLink>
 
                         <NavLink to="/menu" className="menu-item">

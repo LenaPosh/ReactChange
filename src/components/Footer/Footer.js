@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import './style.css';
 import { FaWallet } from 'react-icons/fa';
@@ -81,11 +81,11 @@ const MenuLink = styled(NavLink)`
 export const AppFooter = () => {
     const { t } = useTranslation();
     const [isHomePage, setIsHomePage] = useState(false);
+    const location = useLocation();
 
     useEffect(() => {
-        const currentPath = window.location.pathname.startsWith('/home');
-        setIsHomePage(currentPath);
-    }, []); // Вызываем только после монтирования
+        setIsHomePage(location.pathname.startsWith('/home'));
+    }, [location.pathname]);
 
     return (
         <>

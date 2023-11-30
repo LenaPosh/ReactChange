@@ -6,7 +6,7 @@ import 'devextreme/dist/css/dx.light.css';
 const profitChartStyles = {
     marginLeft: '10px',
     marginRight: '10px',
-    marginBottom: '50px',
+    marginBottom: '100px',
 
 };
 
@@ -29,7 +29,7 @@ class ProfitChart extends React.Component {
         const { profitData } = this.state;
 
         return (
-            <div style={profitChartStyles}>
+            <div style={profitChartStyles} >
                 <Chart dataSource={profitData}>
                     <CommonSeriesSettings argumentField="date" valueField="profit" />
                     <Series type="bar" color="#08a652" />

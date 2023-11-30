@@ -12,7 +12,7 @@ const data = [
 
 const TableComponent = () => {
     return (
-        <div className="table-container">
+        <div className="table-container" style={{ marginBottom: '100px' }}>
             <DataGrid
                 dataSource={data}
                 showBorders={true}

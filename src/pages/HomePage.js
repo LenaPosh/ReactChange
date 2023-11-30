@@ -2,7 +2,19 @@ import React from "react";
 import { MenuTop } from "../components/MenuTop/MenuTop";
 import { AppFooter } from "../components/Footer/Footer";
 import NewsList from "../components/Home/NewsList";
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
 
+const lightTheme = {
+    backgroundColor: '#ffffff',
+    textColor: '#2c2c2c',
+};
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${props => props.theme.backgroundColor};
+    color: ${props => props.theme.textColor};
+  }
+`;
 export const HomePage = () => {
     // Новость о запуске новой версии личного кабинета в Телеграме
     const newsData = [
@@ -18,9 +30,13 @@ export const HomePage = () => {
 
     return (
         <>
-            <MenuTop />
-            <NewsList news={newsData} />
-            <AppFooter />
+            <ThemeProvider theme={lightTheme}>
+                <GlobalStyle />
+                <MenuTop />
+                <NewsList news={newsData} />
+                <AppFooter />
+
+            </ThemeProvider>
         </>
     );
 };

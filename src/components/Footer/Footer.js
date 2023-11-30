@@ -84,9 +84,10 @@ export const AppFooter = () => {
     const [isHomePage, setIsHomePage] = useState(false);
 
     useEffect(() => {
-        const currentPath = window.location.pathname;
-        setIsHomePage(currentPath === '/home');
+        const currentPath = window.location.pathname.startsWith('/home');
+        setIsHomePage(currentPath);
     }, []);
+
 
     return (
         <>

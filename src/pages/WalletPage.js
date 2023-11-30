@@ -6,13 +6,24 @@ import './styleBalance.css'
 
 import TableComponent from "../components/Balance/TabThree";
 import React from "react";
-import {ThemeProvider} from "react-bootstrap";
+import {createGlobalStyle, ThemeProvider} from 'styled-components';
 
+const lightTheme = {
+    backgroundColor: '#ffffff',
+    textColor: '#2c2c2c',
+};
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${props => props.theme.backgroundColor};
+    color: ${props => props.theme.textColor};
+  }
+`;
 
 export const WalletPage = () => {
     return (
         <>
-            <ThemeProvider>
+            <ThemeProvider theme={lightTheme}>
                 <MenuTop/>
                 {/*<AppWallet/>*/}
                 {/*<PieChart/>*/}
@@ -32,6 +43,7 @@ export const WalletPage = () => {
                 </div>
 
                 <AppFooter/>
+                <GlobalStyle />
             </ThemeProvider>
 
 

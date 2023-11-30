@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Импортируем useTranslation
@@ -81,6 +81,12 @@ const MenuLink = styled(NavLink)`
 `;
 export const AppFooter = () => {
     const { t } = useTranslation();
+    const [isHomePage, setIsHomePage] = useState(false);
+
+    useEffect(() => {
+        const currentPath = window.location.pathname;
+        setIsHomePage(currentPath === '/home');
+    }, []);
 
     return (
         <>
@@ -88,7 +94,7 @@ export const AppFooter = () => {
                 <div className="menu-navigation">
                     <div className="menu-items">
 
-                        <MenuLink to="/home" className="menu-item active" activeClassName="active">
+                        <MenuLink to="/home" className={`menu-item ${isHomePage ? 'active' : ''}`} activeClassName="active">
                             <div className="menu-icon">
                                 <ImHome />
                             </div>

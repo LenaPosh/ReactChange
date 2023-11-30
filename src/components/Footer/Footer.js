@@ -28,7 +28,7 @@ const FooterStyle = styled.footer`
   height: 60px;
 `;
 const MenuLink = styled(NavLink)`
-  color: #495057;
+  color: ${props => props.isHomePage ? '#08a652' : '#495057'};
   text-decoration: none;
   transition: transform 0.3s ease-in-out;
   padding: 10px;
@@ -82,11 +82,11 @@ const MenuLink = styled(NavLink)`
 export const AppFooter = () => {
     const { t } = useTranslation();
     const [isHomePage, setIsHomePage] = useState(false);
-
     useEffect(() => {
         const currentPath = window.location.pathname.startsWith('/home');
         setIsHomePage(currentPath);
     }, []);
+
 
 
     return (
@@ -101,6 +101,7 @@ export const AppFooter = () => {
                             </div>
                             <div className="menu-text" style={{ whiteSpace: 'nowrap' }}>{t('home')}</div>
                         </MenuLink>
+
 
                         <NavLink to="/menu" className="menu-item">
                             <div className="menu-icon">

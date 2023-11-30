@@ -24,6 +24,7 @@ export const WalletPage = () => {
     return (
         <>
             <ThemeProvider theme={lightTheme}>
+                <GlobalStyle />
                 <MenuTop/>
                 {/*<AppWallet/>*/}
                 {/*<PieChart/>*/}
@@ -43,7 +44,7 @@ export const WalletPage = () => {
                 </div>
 
                 <AppFooter/>
-                <GlobalStyle />
+
             </ThemeProvider>
 
 

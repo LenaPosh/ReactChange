@@ -14,15 +14,22 @@ class BalanceChart extends React.Component {
         super(props);
 
         // Ваши данные баланса (дата и значение)
+    //     this.state = {
+    //         balanceData: [
+    //             { date: '26-11-2023', value: 392 },
+    //             { date: '27-11-2023', value: 397 },
+    //             { date: '28-11-2023', value: 405 },
+    //         ],
+    //     };
+    // }
         this.state = {
             balanceData: [
-                { date: '26-11-2023', value: 392 },
-                { date: '27-11-2023', value: 397 },
-                { date: '28-11-2023', value: 405 },
+                { date: '00-00-0000', value: 0 },
+                { date: '00-00-0000', value: 0 },
+                { date: '00-00-0000', value: 0 },
             ],
         };
     }
-
     render() {
         const { balanceData } = this.state;
 

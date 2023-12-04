@@ -15,11 +15,21 @@ class ProfitChart extends React.Component {
         super(props);
 
         // Ваши данные прибыли (дата и значение)
+    //     this.state = {
+    //         profitData: [
+    //             { date: '26-11-2023', profit: 2 },
+    //             { date: '27-11-2023', profit: 5 },
+    //             { date: '28-11-2023', profit: 8 },
+    //
+    //         ],
+    //     };
+    // }
+
         this.state = {
             profitData: [
-                { date: '26-11-2023', profit: 2 },
-                { date: '27-11-2023', profit: 5 },
-                { date: '28-11-2023', profit: 8 },
+                { date: '00-00-0000', profit: 0 },
+                { date: '00-00-0000', profit: 0 },
+                { date: '00-00-0000', profit: 0 },
 
             ],
         };

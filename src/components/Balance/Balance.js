@@ -9,9 +9,12 @@ import PieChart, {
 import './style.css';
 
 const newData = {
-    WBNB: 280.00,
-    TrustFi: 60.00,
-    Friend3: 65.00,
+    WBNB: 2000.00,
+    TrustFi: 300.00,
+    Friend3: 300.00,
+    EOS: 300.00,
+    Cake: 300.00,
+    STG: 300.00
 };
 
 const data = Object.keys(newData).map((token) => ({
@@ -26,6 +29,8 @@ const customizeTooltip = (arg) => {
 };
 
 const customizeLabel = (pointInfo) => {
+    const isMobile = window.innerWidth <= 768;
+
     return `${pointInfo.argumentText}\n${pointInfo.value.toFixed(2)}$ ${(pointInfo.percent * 100).toFixed(2)}%`;
 };
 
@@ -37,6 +42,7 @@ const ChartContainer = () => {
         backgroundColor: 'white',
         display: 'flex',
         marginBottom: '0',
+        fontSize: '10px',
     };
 
     const mobileContainerStyles = {
@@ -46,6 +52,7 @@ const ChartContainer = () => {
         marginLeft: '5px',
         marginRight: '5px',
         marginBottom: '0',
+        fontSize: '10px',
     };
 
     const isMobile = window.innerWidth <= 768;
@@ -54,7 +61,12 @@ const ChartContainer = () => {
         <div style={isMobile ? mobileContainerStyles : containerStyles} className="chart-container">
             <PieChart dataSource={data} palette={['#e9cbfc', '#8fefbc', '#abd9f1']}>
                 <Series argumentField="region" innerRadius={isMobile ? 0.1 : 0.2}>
-                    <Label visible={true} position={isMobile ? 'outside' : 'columns'} customizeText={customizeLabel} />
+                    <Label
+                        visible={true}
+                        position={isMobile ? 'outside' : 'columns'}
+                        customizeText={customizeLabel}
+                        font={{ size: isMobile ? 8 : 12 }}
+                    />
                 </Series>
                 <Tooltip enabled={true} customizeTooltip={customizeTooltip}>
                     <Format type="millions" />

@@ -9,7 +9,7 @@ import PieChart, {
 import './style.css';
 
 const newData = {
-    WBNB: 2000.00,
+    WBNB: 2012.00,
     TrustFi: 300.00,
     Friend3: 300.00,
     EOS: 300.00,

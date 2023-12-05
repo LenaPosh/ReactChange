@@ -5,12 +5,12 @@ import 'devextreme/dist/css/dx.light.css';
 import './TableComponent.css'; // Import your custom styles
 
 const data = [
-    { token: "WBNB", numberWithDollar: 2012.00, numberWithPercentage: 57.29 },
-    { token: "TrustFi", numberWithDollar: 300.00, numberWithPercentage: 8.54 },
-    { token: "Friend3", numberWithDollar: 300.00, numberWithPercentage: 8.54 },
-    { token: "EOS", numberWithDollar: 300.00, numberWithPercentage: 8.54 },
-    { token: "Cake", numberWithDollar: 300.00, numberWithPercentage: 8.54 },
-    { token: "STG", numberWithDollar: 300.00, numberWithPercentage: 8.54 },
+    { token: "WBNB", numberWithDollar: 2028.00, numberWithPercentage: 57.48 },
+    { token: "TrustFi", numberWithDollar: 300.00, numberWithPercentage: 8.5 },
+    { token: "Friend3", numberWithDollar: 300.00, numberWithPercentage: 8.5 },
+    { token: "EOS", numberWithDollar: 300.00, numberWithPercentage: 8.5 },
+    { token: "Cake", numberWithDollar: 300.00, numberWithPercentage: 8.5 },
+    { token: "STG", numberWithDollar: 300.00, numberWithPercentage: 8.5 },
 ];
 
 const TableComponent = () => {

@@ -9,12 +9,22 @@ import PieChart, {
 import './style.css';
 
 const newData = {
-    WBNB: 2028.00,
-    TrustFi: 300.00,
-    Friend3: 300.00,
-    EOS: 300.00,
-    Cake: 300.00,
-    STG: 300.00
+    WBNB: 1601.0,
+    BabyDragon: 190.0,
+    MongBNB: 190.0,
+    AITECH: 190.0,
+    FomoFi: 190.0,
+    Dracarys: 190.0,
+    EtherconnectCoin: 190.0,
+    Grok: 190.0,
+    JELLY: 190.0,
+    AREON: 190.0,
+    PAID: 190.0,
+    PRIVA: 190.0,
+    PALM: 190.0,
+    ALGOMI: 190.0,
+    GPTCEO: 190.0,
+    AIBaby: 190.0
 };
 
 const data = Object.keys(newData).map((token) => ({

@@ -24,9 +24,9 @@ class BalanceChart extends React.Component {
     // }
         this.state = {
             balanceData: [
-                { date: '00-00-0000', value: 0 },
-                { date: '00-00-0000', value: 0 },
-                { date: '00-00-0000', value: 0 },
+                { date: '14-01-2024', value: 32.92 },
+                { date: '15-01-2024', value: 31.85 },
+                { date: '16-01-2024', value: 103.88 },
             ],
         };
     }

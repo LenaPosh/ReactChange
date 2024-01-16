@@ -27,9 +27,9 @@ class ProfitChart extends React.Component {
 
         this.state = {
             profitData: [
-                { date: '00-00-0000', profit: 0 },
-                { date: '00-00-0000', profit: 0 },
-                { date: '00-00-0000', profit: 0 },
+                { date: '14-01-2024', profit: 32.92 },
+                { date: '15-01-2024', profit: 31.85 },
+                { date: '16-01-2024', profit: 103.88 },
 
             ],
         };

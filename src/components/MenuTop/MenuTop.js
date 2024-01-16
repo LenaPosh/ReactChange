@@ -32,7 +32,7 @@ export const StyledNav = styled.nav`
 
 export const MenuTop = () => {
     const [selectedOption, setSelectedOption] = useState(null);
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
     // const options = [
     //     { label: '0,00000', icon: <FaBitcoin size="30" color="orange" /> },
@@ -56,7 +56,7 @@ export const MenuTop = () => {
             <NavLink to="/" className={`logo-text ${selectedOption === null ? 'active' : ''}`}>
                 SWFRBOT
             </NavLink>
-            <BalanceText>Balance: 3 528$</BalanceText>
+            <BalanceText>Balance: 4 451$</BalanceText>
 
             {/*        <div className={`dropdown ${isOpen ? 'isOpen' : ''}`}>*/}
 

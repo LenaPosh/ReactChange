@@ -57,7 +57,36 @@ a {
 
 a:hover {
     text-decoration: underline;
+
 }
+
+.scrollable-table {
+    max-height: 400px; /* Example height */
+    overflow-y: auto;
+    display: block;
+}
+
+/* Styling the scrollbar itself */
+.scrollable-table::-webkit-scrollbar {
+    width: 5px; /* Adjust the width of the scrollbar here */
+}
+
+/* Styling the background of the scrollbar track */
+.scrollable-table::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Optional: change the track background color */
+}
+
+/* Styling the scrollbar thumb (the part that is draggable) */
+.scrollable-table::-webkit-scrollbar-thumb {
+    background: rgba(114, 112, 112, 0.42); /* Optional: change the thumb color */
+}
+
+/* Changing the thumb color when hovered or clicked */
+.scrollable-table::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6); /* Optional: change the hover color */
+}
+
+
 
 @media screen and (max-width: 600px) {
     .my-table th, .my-table td {

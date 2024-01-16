@@ -2,8 +2,7 @@ import React from 'react';
 import DataGrid, { Column, Pager, Paging } from 'devextreme-react/data-grid';
 import 'devextreme/dist/css/dx.common.css';
 import 'devextreme/dist/css/dx.light.css';
-import './TableComponent.css'; // Import your custom styles
-
+import './TableComponent.css';
 const data = [
     { token: "WBNB", numberWithDollar: 2028.00, numberWithPercentage: 57.48 },
     { token: "TrustFi", numberWithDollar: 300.00, numberWithPercentage: 8.5 },

@@ -10,21 +10,26 @@ import './style.css';
 
 const newData = {
     WBNB: 1601.0,
-    BabyDragon: 190.0,
-    MongBNB: 190.0,
-    AITECH: 190.0,
-    FomoFi: 190.0,
-    Dracarys: 190.0,
-    EtherconnectCoin: 190.0,
-    Grok: 190.0,
-    JELLY: 190.0,
-    AREON: 190.0,
-    PAID: 190.0,
-    PRIVA: 190.0,
-    PALM: 190.0,
-    ALGOMI: 190.0,
-    GPTCEO: 190.0,
-    AIBaby: 190.0
+    BabyDragon: 169.0,
+    MongBNB: 169.0,
+    AITECH: 169.0,
+    FomoFi: 169.0,
+    Dracarys: 169.0,
+    EtherconnectCoin: 169.0,
+    Grok: 169.0,
+    JELLY: 169.0,
+    AREON: 169.0,
+    PAID: 169.0,
+    PRIVA: 169.0,
+    PALM: 169.0,
+    ALGOMI: 169.0,
+    GPTCEO: 169.0,
+    AIBaby: 169.0,
+    GAIAEverworld: 169.0,
+    BomberCoin: 169.0,
+    MonPolyMoney: 169.0,
+
+
 };
 
 const data = Object.keys(newData).map((token) => ({

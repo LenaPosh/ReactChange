@@ -9,6 +9,120 @@ const MyTable = () => {
             Datetime: '17.01.24 05:57:00',
             Active: 'GAIA Everworld',
             BaseActive: 'WBNB',
+            Amount: '$485.58',
+            Profit: '$5.95',
+            details: [
+                { direction: 'BUY', quantity: '485.58', commission: '0.65', link: 'https://bscscan.com/tx/0x678ab5356193ba3fb2876bf0f4c92d714c4b79ee4adc126c8221015d3ef824f9' },
+                { direction: 'SELL', quantity: '492.27', commission: '0.09', link: 'https://bscscan.com/tx/0x7fed1d6a88f808a84f999b613907eb7b5072cee492f62b7a1598c042a1a4747f' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 05:06:51',
+            Active: 'W3N',
+            BaseActive: 'WBNB',
+            Amount: '$159.23',
+            Profit: '$1.23',
+            details: [
+                { direction: 'BUY', quantity: '159.23', commission: '0.72', link: 'https://bscscan.com/tx/0xedc6094ab4089aece6e07d39109b9d3012b9adbc7c57e339065cb1045165affb' },
+                { direction: 'SELL', quantity: '162.09', commission: '0.91', link: 'https://bscscan.com/tx/0xde89dcc8acdddf633dd8cd5b4c77691932048e7bce4bca7d3066e991950f4e74' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 03:02:07',
+            Active: 'MoMo KEY',
+            BaseActive: 'WBNB',
+            Amount: '$99.46',
+            Profit: '$2.72',
+            details: [
+                { direction: 'BUY', quantity: '99.46', commission: '2.05', link: 'https://bscscan.com/tx/0xcba36100a3a2c8122d7e51d72489c1d963fb0d42908e2bad3483092624a09293' },
+                { direction: 'SELL', quantity: '104.31', commission: '0.08', link: 'https://bscscan.com/tx/0xf4c21b82559f637c160822bb633d196988876a69d1e629557e8f7794430a5e16' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 03:00:25',
+            Active: 'Bomber Coin',
+            BaseActive: 'WBNB',
+            Amount: '$2157.2',
+            Profit: '$7.06',
+            details: [
+                { direction: 'BUY', quantity: '2157.2', commission: '0.10', link: 'https://bscscan.com/tx/0xda21efe0f4bf195c4628a6b5be8ad395cb5f7a6890e15fdf1aa3e3625047190d' },
+                { direction: 'SELL', quantity: '2164.45', commission: '0.09', link: 'https://bscscan.com/tx/0x3bd3a51660594ee6efab0e0719f0de69cf6f00d8bb4a43d2cd7117e5ae31fa78' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 11:42:34',
+            Active: 'JELLY',
+            BaseActive: 'WBNB',
+            Amount: '$109.54',
+            Profit: '$2.16',
+            details: [
+                { direction: 'BUY', quantity: '109.54', commission: '0.28', link: 'https://bscscan.com/tx/0xc0a7e5575cf1d5258161431e036e28548ad715409dbc15c8b3ae47d9ccaef667' },
+                { direction: 'SELL', quantity: '112.08', commission: '0.10', link: 'https://bscscan.com/tx/0x258dd254da48301181e6c3902e564ae0579630bccdaf11f46c5c578333e67066' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 10:59:04',
+            Active: 'LXB',
+            BaseActive: 'WBNB',
+            Amount: '$0.23',
+            Profit: '$27.43',
+            details: [
+                { direction: 'BUY', quantity: '0.23', commission: '2.96', link: 'https://bscscan.com/tx/0xb9f376a49851a67b0958b0203a243e2bbc35e26dcbd38e2f06cbe32843c9e9d2' },
+                { direction: 'SELL', quantity: '30.74', commission: '0.12', link: 'https://bscscan.com/tx/0x879d2bd47550f4737bc1b18332a25205bf0f8d92812cf1aef7b9cbcbe0aa6da9' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 09:11:45',
+            Active: 'XENO Utility Token',
+            BaseActive: 'WBNB',
+            Amount: '$88.92',
+            Profit: '$1.3',
+            details: [
+                { direction: 'BUY', quantity: '88.92', commission: '0.15', link: 'https://bscscan.com/tx/0x5c005bf18b16d6c428bf8d6c3030d28b85efa17582c4875cc98994d8d49c507e' },
+                { direction: 'SELL', quantity: '90.46', commission: '0.09', link: 'https://bscscan.com/tx/0x0d0dccdf42d5e0f4629240a2b94194591c8255dfcc87c7f0138858f583d88834' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 08:48:31',
+            Active: 'Drake&#39;s Dog',
+            BaseActive: 'WBNB',
+            Amount: '$28.32',
+            Profit: '$0,93',
+            details: [
+                { direction: 'BUY', quantity: '28.32', commission: '0.14', link: 'https://bscscan.com/tx/0x75abe70fe897d277832b50dca935234fb281d59ecdb3c4e0bd55f48a1e995b6b' },
+                { direction: 'SELL', quantity: '29.58', commission: '0.19', link: 'https://bscscan.com/tx/0x1f0f4a3fb613cfc3cd1b3cce83a3a34e088effa6846adb27014463ca4b3a4364' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 08:40:43',
+            Active: 'FomoFi',
+            BaseActive: 'WBNB',
+            Amount: '$58.73',
+            Profit: '$23.95',
+            details: [
+                { direction: 'BUY', quantity: '1349.56', commission: '2.64', link: 'https://bscscan.com/tx/0x2fda7a3509384b985756bced905d1d76c7930b8fa681ac46c4a3fb0baec1397c' },
+                { direction: 'SELL', quantity: '1376.00', commission: '0.41', link: 'https://bscscan.com/tx/0x3fd7c3d975b6433a8ed6d051591bc5666f2bd83462529bd4951dabf9d41eaeb4' },
+            ],
+        },
+        {
+            Datetime: '17.01.24 06:56:54',
+            Active: 'MonPoly Money',
+            BaseActive: 'WBNB',
+            Amount: '$58.73',
+            Profit: '$3.69',
+            details: [
+                { direction: 'BUY', quantity: '58.73', commission: '0.56', link: 'https://bscscan.com/tx/0x9bbfed1574fd583d15bcd17f1e3a5699dfd6b5f3a743468e21991df61ff9de17' },
+                { direction: 'SELL', quantity: '63.16', commission: '0.18', link: 'https://bscscan.com/tx/0x47acbd375343cfd14a7185842175ca83be3e1f3bd0bf555813a557c2ffd4dfb2' },
+            ],
+        },
+
+
+
+
+        {
+            Datetime: '17.01.24 05:57:00',
+            Active: 'GAIA Everworld',
+            BaseActive: 'WBNB',
             Amount: '$479.71',
             Profit: '$5.87',
             details: [

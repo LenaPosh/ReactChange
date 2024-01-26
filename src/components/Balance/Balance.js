@@ -28,9 +28,9 @@ const newData = {
     GAIAEverworld: 178.0,
     BomberCoin: 178.0,
     MonPolyMoney: 178.0,
-    TRUMP: 107.36,
-    TRICERATOPS: 107.36,
-    Spintop: 107.36
+    TRUMP: 184.63,
+    TRICERATOPS: 184.63,
+    Spintop: 184.63
 
 
 };

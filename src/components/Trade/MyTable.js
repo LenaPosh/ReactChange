@@ -5,17 +5,17 @@ import './MyTable.css';
 
 const MyTable = () => {
     const data = [
-        {
-            Datetime: '24.01.24 09:44:04',
-            Active: 'Bitonite',
-            BaseActive: 'WBNB',
-            Amount: '291.16',
-            Profit: '$16.26',
-            details: [
-                { direction: 'BUY', quantity: '291.16', commission: '0.11', link: 'https://bscscan.com/tx/0x3d7fe5c0474858a2cbdb53feb631359b5f1b456968385da2fff77f516838d7a3' },
-                { direction: 'SELL', quantity: '307.62', commission: '0.09', link: 'https://bscscan.com/tx/0xa727358464f7c773ec8c91d4d92a1a115edbbe8d9df0c82b5586972c9b4a6e0d' },
-            ],
-        },
+        // {
+        //     Datetime: '24.01.24 09:44:04',
+        //     Active: 'Bitonite',
+        //     BaseActive: 'WBNB',
+        //     Amount: '291.16',
+        //     Profit: '$16.26',
+        //     details: [
+        //         { direction: 'BUY', quantity: '291.16', commission: '0.11', link: 'https://bscscan.com/tx/0x3d7fe5c0474858a2cbdb53feb631359b5f1b456968385da2fff77f516838d7a3' },
+        //         { direction: 'SELL', quantity: '307.62', commission: '0.09', link: 'https://bscscan.com/tx/0xa727358464f7c773ec8c91d4d92a1a115edbbe8d9df0c82b5586972c9b4a6e0d' },
+        //     ],
+        // },
 
 
 

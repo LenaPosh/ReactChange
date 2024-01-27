@@ -6,16 +6,42 @@ import './MyTable.css';
 const MyTable = () => {
     const data = [
         // {
-        //     Datetime: '26.01.24 10:28:49',
-        //     Active: 'Everdome',
+        //     Datetime: '27.01.24 07:38:45',
+        //     Active: 'JiaoZi',
         //     BaseActive: 'WBNB',
-        //     Amount: '1595.11',
-        //     Profit: '$18.76',
+        //     Amount: '375.55',
+        //     Profit: '$4.17',
         //     details: [
-        //         { direction: 'BUY', quantity: '1595.11', commission: '1.97', link: 'https://bscscan.com/tx/0x8049a6cafeacde354b65b980fa9131ff7876cc1bdceb269b5d3c840beed2e979' },
-        //         { direction: 'SELL', quantity: '1615.92', commission: '0.08', link: 'https://bscscan.com/tx/0xe259fda1a9a335c73910a437d92b145ba6e428fc142daacf10680a5712cc16b1' },
+        //         { direction: 'BUY', quantity: '375.55', commission: '0.61', link: 'https://bscscan.com/tx/0x6e341f43aee61bc4220fe039076240b3bb7399c78509f7663fce831e001ad35b' },
+        //         { direction: 'SELL', quantity: '380.54', commission: '0.21', link: 'https://bscscan.com/tx/0x273e182ad2d2c12ae651e8e2e8daa4e9cd38d2b4e36b8a5c17592831d6146dd4' },
         //     ],
         // },
+        {
+            Datetime: '27.01.24 07:38:45',
+            Active: 'JiaoZi',
+            BaseActive: 'WBNB',
+            Amount: '375.55',
+            Profit: '$4.17',
+            details: [
+                { direction: 'BUY', quantity: '375.55', commission: '0.61', link: 'https://bscscan.com/tx/0x6e341f43aee61bc4220fe039076240b3bb7399c78509f7663fce831e001ad35b' },
+                { direction: 'SELL', quantity: '380.54', commission: '0.21', link: 'https://bscscan.com/tx/0x273e182ad2d2c12ae651e8e2e8daa4e9cd38d2b4e36b8a5c17592831d6146dd4' },
+            ],
+        },
+        {
+            Datetime: '27.01.24 05:34:45',
+            Active: 'KitKat',
+            BaseActive: 'WBNB',
+            Amount: '56.88',
+            Profit: '$2.58',
+            details: [
+                { direction: 'BUY', quantity: '56.88', commission: '0.31', link: 'https://bscscan.com/tx/0xf2d21134ce6244090aefc7586010b64c0eba84d5399a99c91ccfa007686c99ea' },
+                { direction: 'SELL', quantity: '59.85', commission: '0.08', link: 'https://bscscan.com/tx/0xd246a7a9148892651cd5ada5642794defed9d0e379daa730cf1b140c570d6c0c' },
+            ],
+        },
+
+
+
+
         {
             Datetime: '26.01.24 10:28:49',
             Active: 'Everdome',

@@ -30,7 +30,9 @@ const newData = {
     MonPolyMoney: 178.0,
     TRUMP: 184.63,
     TRICERATOPS: 184.63,
-    Spintop: 184.63
+    Spintop: 184.63,
+    longzl: 153.23
+
 
 
 };

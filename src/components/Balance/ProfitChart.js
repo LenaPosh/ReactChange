@@ -37,6 +37,7 @@ class ProfitChart extends React.Component {
                 { date: '23-01-2024', profit: 27.02},
                 { date: '24-01-2024', profit: 219.82},
                 { date: '25-01-2024', profit: 153.23},
+                { date: '26-01-2024', profit: 252.65},
 
 
             ],

@@ -31,7 +31,9 @@ const newData = {
     TRUMP: 184.63,
     TRICERATOPS: 184.63,
     Spintop: 184.63,
-    longzl: 153.23
+    longzl: 153.23,
+    Hydra: 126.33,
+    DOGEMOON: 126.33
 
 
 

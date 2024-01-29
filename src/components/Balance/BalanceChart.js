@@ -35,6 +35,9 @@ class BalanceChart extends React.Component {
                 { date: '24-01-2024', value: 219.82},
                 { date: '25-01-2024', value: 153.23},
                 { date: '26-01-2024', value: 252.65},
+                { date: '27-01-2024', value: 56.00},
+                { date: '28-01-2024', value: 105.35},
+                { date: '29-01-2024', value: 203.26}
             ],
         };
     }

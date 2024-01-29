@@ -6,16 +6,223 @@ import './MyTable.css';
 const MyTable = () => {
     const data = [
         // {
-        //     Datetime: '27.01.24 07:38:45',
-        //     Active: 'JiaoZi',
+        //     Datetime: '29.01.24 07:46:21',
+        //     Active: 'Mrweb Finance',
         //     BaseActive: 'WBNB',
-        //     Amount: '375.55',
-        //     Profit: '$4.17',
+        //     Amount: '59.75',
+        //     Profit: '$2.51',
         //     details: [
-        //         { direction: 'BUY', quantity: '375.55', commission: '0.61', link: 'https://bscscan.com/tx/0x6e341f43aee61bc4220fe039076240b3bb7399c78509f7663fce831e001ad35b' },
-        //         { direction: 'SELL', quantity: '380.54', commission: '0.21', link: 'https://bscscan.com/tx/0x273e182ad2d2c12ae651e8e2e8daa4e9cd38d2b4e36b8a5c17592831d6146dd4' },
+        //         { direction: 'BUY', quantity: '59.75', commission: '0.31', link: 'https://bscscan.com/tx/0x7092db942cdf0cc822a8eef7a2ef2fa6a9f6644edb467f2ef95d59c9f23551bb' },
+        //         { direction: 'SELL', quantity: '62.66', commission: '0.09', link: 'https://bscscan.com/tx/0x1938d62b34086713dc2505edbd95a52834c25bfaf94897b14a5d9252b578a903' },
         //     ],
         // },
+        {
+            Datetime: '29.01.24 07:46:21',
+            Active: 'Mrweb Finance',
+            BaseActive: 'WBNB',
+            Amount: '59.75',
+            Profit: '$2.51',
+            details: [
+                { direction: 'BUY', quantity: '59.75', commission: '0.31', link: 'https://bscscan.com/tx/0x7092db942cdf0cc822a8eef7a2ef2fa6a9f6644edb467f2ef95d59c9f23551bb' },
+                { direction: 'SELL', quantity: '62.66', commission: '0.09', link: 'https://bscscan.com/tx/0x1938d62b34086713dc2505edbd95a52834c25bfaf94897b14a5d9252b578a903' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 05:03:49',
+            Active: 'GROK',
+            BaseActive: 'WBNB',
+            Amount: '424.93',
+            Profit: '$2.08',
+            details: [
+                { direction: 'BUY', quantity: '424.93', commission: '0.31', link: 'https://bscscan.com/tx/0xe8c7b1c6e9961219ae6b1697ad1b8f5d0a56c17069b5cbdff91ce6301c43c506' },
+                { direction: 'SELL', quantity: '427.53', commission: '0.21', link: 'https://bscscan.com/tx/0x85e369d6d30b816292a7e8afc500ae7ef41192620b5faa38295de2b1a9706b2c' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 03:37:25',
+            Active: 'JiaoZi',
+            BaseActive: 'WBNB',
+            Amount: '2307.96',
+            Profit: '$23.81',
+            details: [
+                { direction: 'BUY', quantity: '2307.96', commission: '2.51', link: 'https://bscscan.com/tx/0x9f43d5a8245c71f895d6e6499f9fd6a4f17744e54b65f4f30cc053a8f47fcabb' },
+                { direction: 'SELL', quantity: '2334.41', commission: '0.13', link: 'https://bscscan.com/tx/0x8074de64923659064d11c4eba8917d6e36dfc45a8d38b455e33b7abf6e9a1d62' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 02:49:12',
+            Active: 'Bomber Coin',
+            BaseActive: 'WBNB',
+            Amount: '3207.26',
+            Profit: '$133.92',
+            details: [
+                { direction: 'BUY', quantity: '3207.26', commission: '12.50', link: 'https://bscscan.com/tx/0x8f054a24620f5660232bb0eb99d3bd8951950f7f4a856a39ea815202cf789fce' },
+                { direction: 'SELL', quantity: '3353.77', commission: '0.09', link: 'https://bscscan.com/tx/0xf151ab0b30d771cdc5c5a25cd5f20d025dc8068303bdc92454758d86eaa452af' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 02:45:20',
+            Active: 'Bomber Coin',
+            BaseActive: 'WBNB',
+            Amount: '296.79',
+            Profit: '$1.98',
+            details: [
+                { direction: 'BUY', quantity: '296.79', commission: '0.25', link: 'https://bscscan.com/tx/0x0d1db512cfdede87cdfcedd1acaa883f6b2a81dcd07472400397637b865a7948' },
+                { direction: 'SELL', quantity: '299.11', commission: '0.09', link: 'https://bscscan.com/tx/0x85f1aa358b6d6350e59773435c69e55d0398d2f97da246258f4b03bb27b84de4' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 02:29:19',
+            Active: 'Bomber Coin',
+            BaseActive: 'WBNB',
+            Amount: '2262.86',
+            Profit: '$24.28',
+            details: [
+                { direction: 'BUY', quantity: '2262.86', commission: '2.71', link: 'https://bscscan.com/tx/0x2e406a3432eedee5c67905a93d5a6dafe363108758d66c6a74d55efd9161b9ee' },
+                { direction: 'SELL', quantity: '2289.94', commission: '0.09', link: 'https://bscscan.com/tx/0xf4586adec84424b5148dcb62b2a28918f5ebd7a4e76aed95e0a85848557231e8' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 02:00:56',
+            Active: 'FomoFi',
+            BaseActive: 'WBNB',
+            Amount: '349.52',
+            Profit: '$3.78',
+            details: [
+                { direction: 'BUY', quantity: '349.52', commission: '0.52', link: 'https://bscscan.com/tx/0x53884c95ab9ecdaa94362875f6e46ff7ecf6c31ed45aa8889e4d029895361a50' },
+                { direction: 'SELL', quantity: '354.11', commission: '0.29', link: 'https://bscscan.com/tx/0x38f1cf2736136882c39917e3f1851be824f2b3f99cd50553a9627e6156e31ed9' },
+            ],
+        },
+        {
+            Datetime: '29.01.24 01:45:42',
+            Active: 'burn2.0 ',
+            BaseActive: 'WBNB',
+            Amount: '608.34',
+            Profit: '$10.9',
+            details: [
+                { direction: 'BUY', quantity: '608.34', commission: '1.26', link: 'https://bscscan.com/tx/0x9a176b71c519e91899d0fb18b8c6cc1a5ddc510dfaf021c4ae393ddabd46e4f7' },
+                { direction: 'SELL', quantity: '621.06', commission: '0.56', link: 'https://bscscan.com/tx/0x440550c5e3d874858f0adc4bd617bbdf820e18f60c714d180e40c53b234d89ef' },
+            ],
+        },
+
+
+
+        {
+            Datetime: '28.01.24 10:09:06',
+            Active: 'Baby Bonk Coin',
+            BaseActive: 'WBNB',
+            Amount: '0.00',
+            Profit: '$3.9',
+            details: [
+                { direction: 'BUY', quantity: '0.00', commission: '0.22', link: 'https://bscscan.com/tx/0xc1ba68ec1f2c17e56923e16d4b3febd2a8d2af93cd8f38a6437915de6fc27c02' },
+                { direction: 'SELL', quantity: '4.44', commission: '0.32', link: 'https://bscscan.com/tx/0x13493afacbf9341a182a80a477d0bdf27f1f96ad13f5a5dea6d471e40d3be904' },
+            ],
+        },
+        {
+            Datetime: '28.01.24 09:26:56',
+            Active: 'PAID Network',
+            BaseActive: 'WBNB',
+            Amount: '3673.24',
+            Profit: '$47.2',
+            details: [
+                { direction: 'BUY', quantity: '3673.24', commission: '4.74', link: 'https://bscscan.com/tx/0xf90b679665b0272652c694bc0327da302a5e75e5ec28b748d0291d3d9efcd345' },
+                { direction: 'SELL', quantity: '3725.27', commission: '0.09', link: 'https://bscscan.com/tx/0x48d771972b0193350e802d094d2ab6a59e6e08bc171f57750fa7497f15f60295' },
+            ],
+        },
+        {
+            Datetime: '28.01.24 09:06:59',
+            Active: 'QuantumXC',
+            BaseActive: 'WBNB',
+            Amount: '41.15',
+            Profit: '$5.41',
+            details: [
+                { direction: 'BUY', quantity: '41.15', commission: '0.61', link: 'https://bscscan.com/tx/0xd093ba51b1bbc7d619c9a59e3ea5479fd5d73a8e5f0f77d2576216da62689bd7' },
+                { direction: 'SELL', quantity: '47.25', commission: '0.08', link: 'https://bscscan.com/tx/0xd165ddd1d2eb14a964ef9f2e98fca9d9b19eba562829a5aada01770ce66e53f3' },
+            ],
+        },
+        {
+            Datetime: '28.01.24 08:02:00',
+            Active: 'BurnedFi',
+            BaseActive: 'WBNB',
+            Amount: '4268.38',
+            Profit: '$37.92',
+            details: [
+                { direction: 'BUY', quantity: '4268.38', commission: '0.20', link: 'https://bscscan.com/tx/0xc4ab00341f586e5985383d37c6c02127e69a498c0af8e399842fe81be839deb0' },
+                { direction: 'SELL', quantity: '4306.84', commission: '0.34', link: 'https://bscscan.com/tx/0xb8ef29c714cfe481946bd1d91c8728b6634939999ba027f552901f3af5464460' },
+            ],
+        },
+        {
+            Datetime: '28.01.24 06:38:44',
+            Active: 'Good Games Guild',
+            BaseActive: 'WBNB',
+            Amount: '583.85',
+            Profit: '$7.06',
+            details: [
+                { direction: 'BUY', quantity: '583.85', commission: '0.77', link: 'https://bscscan.com/tx/0xf0a27d22dc089d774ca7a91cd2f0959a8eda277d03309384c0262d3c62e71202' },
+                { direction: 'SELL', quantity: '591.76', commission: '0.08', link: 'https://bscscan.com/tx/0x827db5c469320778ae8bd86d3d363590775d1a16e0bbbfe97767a5ef775820fd' },
+            ],
+        },
+        {
+            Datetime: '28.01.24 12:20:55',
+            Active: 'Altura',
+            BaseActive: 'WBNB',
+            Amount: '1371.17',
+            Profit: '$3.86',
+            details: [
+                { direction: 'BUY', quantity: '1371.17', commission: '0.11', link: 'https://bscscan.com/tx/0x0a6573a3e6522de07f7bd7066bc338b223c8d10288d0aac020b3f1c08e8ccf28' },
+                { direction: 'SELL', quantity: '1375.24', commission: '0.10', link: 'https://bscscan.com/tx/0x0c771d8afa3d1c66c82e148aa40eacb1578f1ec1999f0600aa69e92ea73b1fe6' },
+            ],
+        },
+
+
+
+
+
+        {
+            Datetime: '27.01.24 10:59:27',
+            Active: 'PAID Network',
+            BaseActive: 'WBNB',
+            Amount: '2758.09',
+            Profit: '$5.33',
+            details: [
+                { direction: 'BUY', quantity: '2758.09', commission: '0.59', link: 'https://bscscan.com/tx/0x8d7ffecf41e711852cbd88882617337ed29522fcfbdfbe0d2e30b4bb2917d0b8' },
+                { direction: 'SELL', quantity: '2764.10', commission: '0.09', link: 'https://bscscan.com/tx/0xfd6bed38c8a1a96399cd62339e6df3127879fa394da724f7687db92013c0e523' },
+            ],
+        },
+        {
+            Datetime: '27.01.24 06:56:15',
+            Active: 'BSC Wrapped Jupiter',
+            BaseActive: 'WBNB',
+            Amount: '333.73',
+            Profit: '$29.88',
+            details: [
+                { direction: 'BUY', quantity: '333.73', commission: '3.11', link: 'https://bscscan.com/tx/0x3e117c93d24ce659fac27cf7d1df5af23c1cc622431816c3677ef4ec9d7fe131' },
+                { direction: 'SELL', quantity: '366.80', commission: '0.08', link: 'https://bscscan.com/tx/0xa032ae56eb4b803dd82b2ec6e0ddf39197d4fe6e2b5f0ea0c40d2e5e7481c801' },
+            ],
+        },
+        {
+            Datetime: '27.01.24 04:21:54',
+            Active: 'RageOnWheels',
+            BaseActive: 'WBNB',
+            Amount: '1591.19',
+            Profit: '$3.47',
+            details: [
+                { direction: 'BUY', quantity: '1591.19', commission: '3.28', link: 'https://bscscan.com/tx/0xebfc66f56094f88f49917c1fdd6f59240328c5ae33357442766d11670f330bfa' },
+                { direction: 'SELL', quantity: '1598.02', commission: '0.08', link: 'https://bscscan.com/tx/0x61a6698005ca6c0ea3e7888e3b5fc4cda9dc59fe6fb8a539a910f784db16ce22' },
+            ],
+        },
+        {
+            Datetime: '27.01.24 01:46:52',
+            Active: 'CRYPTALF',
+            BaseActive: 'WBNB',
+            Amount: '59.57',
+            Profit: '$10.57',
+            details: [
+                { direction: 'BUY', quantity: '59.57', commission: '0.11', link: 'https://bscscan.com/tx/0xc69d7082d4165e664bc8ffc7c4b9822593322e69fdca788552ec6a26eaf18f38' },
+                { direction: 'SELL', quantity: '70.33', commission: '0.08', link: 'https://bscscan.com/tx/0xff445e6758b5cd2b005ddde707c8e138a5f9884376f22d9f5d79fdf044082ce4' },
+            ],
+        },
+
         {
             Datetime: '27.01.24 07:38:45',
             Active: 'JiaoZi',

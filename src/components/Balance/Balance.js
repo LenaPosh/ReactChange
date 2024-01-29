@@ -33,7 +33,9 @@ const newData = {
     Spintop: 184.63,
     longzl: 153.23,
     Hydra: 126.33,
-    DOGEMOON: 126.33
+    DOGEMOON: 126.33,
+    MrwebFinance: 182.3,
+    PAIDNetwork: 182.3
 
 
 
